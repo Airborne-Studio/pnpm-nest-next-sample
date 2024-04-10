@@ -1,0 +1,16 @@
+.home {
+  height: 100%;
+  overflow: hidden;
+}
+
+.dashboardHomeResponsiveImage {
+  @media (max-width: 30em) {
+    display: none;
+  }
+}
+
+.dashboardHomeBetaSection {
+  @media (max-width: 30em) {
+    padding-left: var(--mantine-spacing-xxl);
+  }
+}

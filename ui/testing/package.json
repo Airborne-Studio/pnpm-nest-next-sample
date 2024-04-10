@@ -1,0 +1,37 @@
+{
+  "name": "testing",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.tsx",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "eslint --color ."
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.1",
+    "@testing-library/dom": "^9.3.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/css-modules": "^1.0.3",
+    "@types/node": "^20.2.3",
+    "@types/testing-library__jest-dom": "^5.14.6",
+    "eslint": "^8.40.0",
+    "eslint-config-airborne": "workspace:*",
+    "jest": "^29.7.0",
+    "jest-config-airborne": "workspace:*",
+    "resize-observer-polyfill": "^1.5.1",
+    "ts-jest": "^29.1.1",
+    "tsconfig": "workspace:*"
+  },
+  "dependencies": {
+    "@types/jest": "^29.5.10",
+    "@types/react": "18.2.55",
+    "@types/react-dom": "18.2.19",
+    "next-router-mock": "^0.9.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.4",
+    "use-resize-observer": "^9.1.0"
+  }
+}

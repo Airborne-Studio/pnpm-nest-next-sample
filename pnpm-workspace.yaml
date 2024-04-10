@@ -1,0 +1,4 @@
+packages:
+  - 'backoffice/*'
+  - 'config/*'
+  - 'ui/*'

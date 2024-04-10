@@ -1,0 +1,25 @@
+{
+  "name": "airborne",
+  "description": "Airborne",
+  "packageManager": "pnpm@8.5.1",
+  "scripts": {
+    "dev": "dotenv -c -- turbo run dev --concurrency=16",
+    "tsc": "dotenv -c -e .env.test -- turbo run tsc -- --noEmit",
+    "lint": "dotenv -c -- turbo run lint",
+    "test": "dotenv -c -e .env.test -- turbo run test",
+    "test:e2e": "dotenv -c -e .env.test -- turbo run test:e2e",
+    "test:unit": "dotenv -c -e .env.test -- turbo run test:unit",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "eslint-config-airborne": "workspace:*",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "turbo": "^1.10.13",
+    "typescript": "5.0.4"
+  },
+  "dependencies": {
+    "dotenv-cli": "^7.2.1"
+  }
+}
