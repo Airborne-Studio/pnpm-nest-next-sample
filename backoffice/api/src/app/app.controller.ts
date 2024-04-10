@@ -9,6 +9,8 @@ export class AppController {
 
   @Get('health-check')
   healthCheck() {
-    return {};
+    return {
+      healthy: true,
+    };
   }
 }
