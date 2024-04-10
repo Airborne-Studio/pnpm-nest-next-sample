@@ -44,5 +44,5 @@ pnpm dev
 
 ## Local Development
 
-- [Back Office](http://localhost:3000/)
-- [Back Office API](http://localhost:4000/)
+- [Back Office](http://localhost:3000/) (`backoffice/app`)
+- [Back Office API](http://localhost:4000/) (`backoffice/api`)
