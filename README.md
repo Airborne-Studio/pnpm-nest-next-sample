@@ -28,6 +28,12 @@
 2. Add E2E test to `api` module, using `supertest` and `expect` schemas (eg: `toMatchObject(schema)`)
 3. Add frontend component test for one React component ensuring it renders correctly
 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
 ## Setup
 
 ```shell
