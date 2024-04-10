@@ -16,11 +16,11 @@
 
 ### Frontend
 
-1. Setup new page with components for CRUD operations
+1. Setup new page and components for CRUD operations
    1. Simple list, create, update and delete
    2. Use `swr` to call backend api (`axiosApi` const is ready for use as fetcher function)
    3. `react-hook-form` example for update
-2. Generate new redux slice for persisting some data into the store during above ops
+2. Generate new redux slice for persisting some data into the store during above operations
 
 ### Tests
 
