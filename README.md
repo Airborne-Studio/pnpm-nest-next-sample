@@ -1,8 +1,6 @@
-# README
+# Tasks
 
-## Tasks
-
-### Backend
+## Backend
 
 1. Setup `api` module with standard REST endpoints for `CRUD` operations (accepting both query strings and body data)
    1. Setup DB model (example in `api/src/user`) and DTO classes
@@ -14,7 +12,7 @@
 3. Inject service in first generated module
 4. Add correct `@nestjs/swagger` decorators on controller
 
-### Frontend
+## Frontend
 
 1. Setup new page and components for CRUD operations
    1. Simple list, create, update and delete
@@ -22,7 +20,7 @@
    3. `react-hook-form` example for update
 2. Generate new redux slice for persisting some data into the store during above operations
 
-### Tests
+## Tests
 
 1. Add unit tests to `api` module
 2. Add E2E test to `api` module, using `supertest` and `expect` schemas (eg: `toMatchObject(schema)`)
@@ -34,7 +32,7 @@
 &nbsp;
 &nbsp;
 
-## Setup
+#### Setup
 
 ```shell
 nvm use
@@ -42,7 +40,7 @@ pnpm install
 pnpm dev
 ```
 
-## Local Development
+#### Local Development
 
 - [Back Office](http://localhost:3000/) (`backoffice/app`)
 - [Back Office API](http://localhost:4000/) (`backoffice/api`)
