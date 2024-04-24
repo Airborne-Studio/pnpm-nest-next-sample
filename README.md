@@ -38,6 +38,7 @@
 nvm use
 pnpm install
 pnpm dev
+pnpm test
 ```
 
 #### Local Development
