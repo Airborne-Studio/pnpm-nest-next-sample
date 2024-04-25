@@ -1,3 +1,4 @@
+import { MantineProvider } from '@mantine/core';
 import { render } from 'testing';
 
 import { Dashboard } from './Dashboard';
@@ -7,9 +8,11 @@ describe('Dashboard layout', () => {
     const childrenContent = 'Children content';
 
     const { container, getByText } = render(
-      <Dashboard>
-        <div>{childrenContent}</div>
-      </Dashboard>
+      <MantineProvider>
+        <Dashboard>
+          <div>{childrenContent}</div>
+        </Dashboard>
+      </MantineProvider>
     );
 
     const navbar = container.querySelector('nav');

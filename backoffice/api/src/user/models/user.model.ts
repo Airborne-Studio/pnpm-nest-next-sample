@@ -6,10 +6,8 @@ import {
   Table,
 } from 'sequelize-typescript';
 
-import { UserDto } from '../dto/user.dto';
-
-@Table
-export class User extends Model<User, UserDto> {
+@Table({ tableName: 'Users' })
+export class User extends Model<User> {
   @PrimaryKey
   @AutoIncrement
   @Column
@@ -17,4 +15,22 @@ export class User extends Model<User, UserDto> {
 
   @Column
   name: string;
+
+  @Column
+  firstName: string;
+
+  @Column
+  lastName: string;
+
+  @Column
+  address?: string;
+
+  @Column
+  phoneNumber?: string;
+
+  @Column
+  age?: number;
+
+  @Column
+  description?: string;
 }

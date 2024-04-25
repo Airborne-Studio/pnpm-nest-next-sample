@@ -1,5 +1,8 @@
+
 const globalTeardown = async () => {
-  await globalThis.__APP__.close();
+  if (globalThis.__APP__) {
+      await globalThis.__APP__.close().catch(e => console.error('Error during app shutdown:', e));
+  }
 };
 
 export default globalTeardown;

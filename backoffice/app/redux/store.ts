@@ -13,9 +13,12 @@ import {
 import storage from 'redux-persist/lib/storage';
 
 import globalReducer from './global/global.slice';
+import tableReducer from './table/tableSlice';
+
 
 const rootReducer = combineReducers({
   global: globalReducer,
+  table: tableReducer,
 });
 
 const persistedReducer = persistReducer<ReturnType<typeof rootReducer>>(
@@ -25,7 +28,7 @@ const persistedReducer = persistReducer<ReturnType<typeof rootReducer>>(
     storage,
     whitelist: ['global'],
   },
-  rootReducer
+  rootReducer,
 );
 
 export const store = configureStore({

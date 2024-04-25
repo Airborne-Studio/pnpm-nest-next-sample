@@ -1,3 +1,4 @@
+import { MantineProvider } from '@mantine/core';
 import { render } from 'testing';
 
 import { Breadcrumbs } from './Breadcrumbs';
@@ -6,10 +7,12 @@ describe('Breadcrumbs component', () => {
   test(`renders correctly`, async () => {
     const { getByText } = render(
       <>
-        <div id="breadcrumbs" />
-        <Breadcrumbs
-          items={[{ label: 'Home', href: '/home' }, { label: 'Create' }]}
-        />
+        <MantineProvider>
+          <div id="breadcrumbs" />
+          <Breadcrumbs
+            items={[{ label: 'Home', href: '/home' }, { label: 'Create' }]}
+          />
+        </MantineProvider>
       </>
     );
 
